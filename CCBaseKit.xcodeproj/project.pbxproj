@@ -27,6 +27,7 @@
 		562C5ADC23818BA60051EE92 /* CCExtension_Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5AC923818BA60051EE92 /* CCExtension_Double.swift */; };
 		562C5ADD23818BA60051EE92 /* CCExtension_Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5ACA23818BA60051EE92 /* CCExtension_Float.swift */; };
 		562C5ADE23818BA60051EE92 /* CCExtension_NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5ACB23818BA60051EE92 /* CCExtension_NSNotification.swift */; };
+		568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B8AD12381940200DE05AE /* CCBaseKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		562C5AC923818BA60051EE92 /* CCExtension_Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCExtension_Double.swift; sourceTree = "<group>"; };
 		562C5ACA23818BA60051EE92 /* CCExtension_Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCExtension_Float.swift; sourceTree = "<group>"; };
 		562C5ACB23818BA60051EE92 /* CCExtension_NSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCExtension_NSNotification.swift; sourceTree = "<group>"; };
+		568B8AD12381940200DE05AE /* CCBaseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBaseKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				562C5AB023818B750051EE92 /* CCBaseKit.h */,
+				568B8AD12381940200DE05AE /* CCBaseKit.swift */,
 				562C5AB123818B750051EE92 /* Info.plist */,
 				562C5AB823818BA60051EE92 /* CCExtension */,
 			);
@@ -203,6 +206,7 @@
 				562C5AD123818BA60051EE92 /* CCExtension_UIScrollView.swift in Sources */,
 				562C5ACD23818BA60051EE92 /* CCExtension_UIImage.swift in Sources */,
 				562C5AD823818BA60051EE92 /* CCExtension_NSValue.swift in Sources */,
+				568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */,
 				562C5AD223818BA60051EE92 /* CCExtension_NSNumber.swift in Sources */,
 				562C5ACF23818BA60051EE92 /* CCExtension_UIView.swift in Sources */,
 				562C5ACE23818BA60051EE92 /* CCExtension_Array.swift in Sources */,
