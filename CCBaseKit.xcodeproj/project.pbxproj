@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */; };
 		562C5AB223818B750051EE92 /* CCBaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 562C5AB023818B750051EE92 /* CCBaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		562C5ACC23818BA60051EE92 /* CCExtension_UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5AB923818BA60051EE92 /* CCExtension_UITextField.swift */; };
 		562C5ACD23818BA60051EE92 /* CCExtension_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5ABA23818BA60051EE92 /* CCExtension_UIImage.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UserDefaults.swift; sourceTree = "<group>"; };
 		562C5AAD23818B750051EE92 /* CCBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562C5AB023818B750051EE92 /* CCBaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBaseKit.h; sourceTree = "<group>"; };
 		562C5AB123818B750051EE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				562C5AC923818BA60051EE92 /* CCExtension_Double.swift */,
 				562C5ACA23818BA60051EE92 /* CCExtension_Float.swift */,
 				562C5ACB23818BA60051EE92 /* CCExtension_NSNotification.swift */,
+				00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */,
 			);
 			path = CCExtension;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */,
 				562C5AD223818BA60051EE92 /* CCExtension_NSNumber.swift in Sources */,
 				562C5ACF23818BA60051EE92 /* CCExtension_UIView.swift in Sources */,
+				00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */,
 				562C5ACE23818BA60051EE92 /* CCExtension_Array.swift in Sources */,
 				562C5ADA23818BA60051EE92 /* CCExtension_CALayer.swift in Sources */,
 				562C5AD423818BA60051EE92 /* CCExtension_Wrappable.swift in Sources */,
@@ -362,7 +366,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = YiS.CCBaseKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -388,7 +392,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = YiS.CCBaseKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

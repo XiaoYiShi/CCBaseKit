@@ -34,8 +34,6 @@ public extension UIColor
         return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
     }
     
-    
-    
     /// 初始化一个UIColor
     ///
     /// - Parameter rgb: rgb色值
@@ -44,6 +42,11 @@ public extension UIColor
     {
         return UIColor.cc_init(rgb: rgb, a: 1)
     }
+    
+    /// 初始化一个UIColor
+    /// - Parameters:
+    ///   - rgb: rgb色值
+    ///   - a: 透明度
     static func cc_init(rgb : Int, a:CGFloat) -> UIColor
     {
         // rgb颜色转换（16进制->10进制）
@@ -54,6 +57,7 @@ public extension UIColor
             alpha: a
         )
     }
+    
     /// 初始化一个UIColor
     ///
     /// - Parameter rgb: rgb色值, "cccccc"
@@ -62,6 +66,11 @@ public extension UIColor
     {
         return UIColor.cc_init(rgb: rgb, a: 1)
     }
+    
+    /// 初始化一个UIColor
+    /// - Parameters:
+    ///   - rgb: Parameter rgb: rgb色值, "cccccc"
+    ///   - a: 透明度
     static func cc_init(rgb : String, a: CGFloat) -> UIColor
     {
         //字符串转16进制Int后再生成color
