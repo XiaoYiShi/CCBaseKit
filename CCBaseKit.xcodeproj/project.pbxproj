@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */; };
 		00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */; };
 		562C5AB223818B750051EE92 /* CCBaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 562C5AB023818B750051EE92 /* CCBaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		562C5ACC23818BA60051EE92 /* CCExtension_UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5AB923818BA60051EE92 /* CCExtension_UITextField.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UIViewController.swift; sourceTree = "<group>"; };
 		00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UserDefaults.swift; sourceTree = "<group>"; };
 		562C5AAD23818B750051EE92 /* CCBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562C5AB023818B750051EE92 /* CCBaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBaseKit.h; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				562C5ACA23818BA60051EE92 /* CCExtension_Float.swift */,
 				562C5ACB23818BA60051EE92 /* CCExtension_NSNotification.swift */,
 				00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */,
+				0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */,
 			);
 			path = CCExtension;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */,
 				562C5AD223818BA60051EE92 /* CCExtension_NSNumber.swift in Sources */,
 				562C5ACF23818BA60051EE92 /* CCExtension_UIView.swift in Sources */,
+				0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */,
 				00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */,
 				562C5ACE23818BA60051EE92 /* CCExtension_Array.swift in Sources */,
 				562C5ADA23818BA60051EE92 /* CCExtension_CALayer.swift in Sources */,
