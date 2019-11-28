@@ -8,6 +8,8 @@
 
 import UIKit
 
+//MARK: - 数组转换，Element == String
+/// 便捷获取数组元素
 public extension Array where Element == String
 {
     /// 转换成","分割的字符串
@@ -15,6 +17,9 @@ public extension Array where Element == String
         return self.joined(separator: ",")
     }
 }
+
+//MARK: - 获取数组元素
+/// 便捷获取数组元素
 public extension Array
 {
     /// 数组中第2个元素
@@ -31,6 +36,7 @@ public extension Array
         }
         return nil
     }
+    
     /// 数组中第4个元素
     var fourth: Element? {
         if self.count > 3 {
@@ -77,6 +83,77 @@ public extension Array
     var tenth: Element? {
         if self.count > 9 {
             return self[9]
+        }
+        return nil
+    }
+    
+    /// 数组中第11个元素
+    var eleventh: Element? {
+        if self.count > 10 {
+            return self[10]
+        }
+        return nil
+    }
+    /// 数组中第12个元素
+    var twelfth: Element? {
+        if self.count > 11 {
+            return self[11]
+        }
+        return nil
+    }
+    /// 数组中第13个元素
+    var thirteenth: Element? {
+        if self.count > 12 {
+            return self[12]
+        }
+        return nil
+    }
+    /// 数组中第14个元素
+    var fourteenth: Element? {
+        if self.count > 13 {
+            return self[13]
+        }
+        return nil
+    }
+    /// 数组中第15个元素
+    var fifteenth: Element? {
+        if self.count > 14 {
+            return self[14]
+        }
+        return nil
+    }
+    /// 数组中第16个元素
+    var sixteenth: Element? {
+        if self.count > 15 {
+            return self[15]
+        }
+        return nil
+    }
+    /// 数组中第17个元素
+    var seventeenth: Element? {
+        if self.count > 16 {
+            return self[16]
+        }
+        return nil
+    }
+    /// 数组中第18个元素
+    var eighteenth: Element? {
+        if self.count > 17 {
+            return self[17]
+        }
+        return nil
+    }
+    /// 数组中第19个元素
+    var nineteenth: Element? {
+        if self.count > 18 {
+            return self[18]
+        }
+        return nil
+    }
+    /// 数组中第20个元素
+    var twentieth: Element? {
+        if self.count > 19 {
+            return self[19]
         }
         return nil
     }
