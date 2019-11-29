@@ -51,6 +51,6 @@ public extension Int
 public extension Int
 {
     var cc_color : UIColor {
-        return UIColor.cc_init(rgb: self)
+        return .init(rgb: self)
     }
 }

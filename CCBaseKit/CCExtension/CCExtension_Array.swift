@@ -8,15 +8,6 @@
 
 import UIKit
 
-//MARK: - 数组转换，Element == String
-/// 便捷获取数组元素
-public extension Array where Element == String
-{
-    /// 转换成","分割的字符串
-    var cc_string: String {
-        return self.joined(separator: ",")
-    }
-}
 
 //MARK: - 获取数组元素
 /// 便捷获取数组元素
@@ -160,14 +151,17 @@ public extension Array
 }
 
 
-//public extension Dictionary<Key, Value> where Key : String
-//{
-//    var cc_urlParameterString : String
-//    {
-//        return self.compactMap{"\($0)=\($1)"}.joined(separator: "&")
-//    }
-//}
 
+
+//MARK: - 数组转换，Element == String
+/// 便捷获取数组元素
+public extension Array where Element == String
+{
+    /// 转换成","分割的字符串
+    var cc_string: String {
+        return self.joined(separator: ",")
+    }
+}
 
 //
 //public extension Array

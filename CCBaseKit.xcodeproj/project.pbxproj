@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */; };
 		00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */; };
+		00FC56F32390B37C00E51935 /* CCExtension_Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */; };
+		00FC56F52390C31000E51935 /* CCExtension_UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC56F42390C31000E51935 /* CCExtension_UITextView.swift */; };
+		00FC56F72390EB7900E51935 /* CCExtension_URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC56F62390EB7900E51935 /* CCExtension_URL.swift */; };
 		562C5AB223818B750051EE92 /* CCBaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 562C5AB023818B750051EE92 /* CCBaseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		562C5ACC23818BA60051EE92 /* CCExtension_UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5AB923818BA60051EE92 /* CCExtension_UITextField.swift */; };
 		562C5ACD23818BA60051EE92 /* CCExtension_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5ABA23818BA60051EE92 /* CCExtension_UIImage.swift */; };
@@ -35,6 +38,9 @@
 /* Begin PBXFileReference section */
 		0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UIViewController.swift; sourceTree = "<group>"; };
 		00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UserDefaults.swift; sourceTree = "<group>"; };
+		00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_Dictionary.swift; sourceTree = "<group>"; };
+		00FC56F42390C31000E51935 /* CCExtension_UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UITextView.swift; sourceTree = "<group>"; };
+		00FC56F62390EB7900E51935 /* CCExtension_URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_URL.swift; sourceTree = "<group>"; };
 		562C5AAD23818B750051EE92 /* CCBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562C5AB023818B750051EE92 /* CCBaseKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCBaseKit.h; sourceTree = "<group>"; };
 		562C5AB123818B750051EE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,8 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				562C5AB923818BA60051EE92 /* CCExtension_UITextField.swift */,
+				00FC56F42390C31000E51935 /* CCExtension_UITextView.swift */,
 				562C5ABA23818BA60051EE92 /* CCExtension_UIImage.swift */,
 				562C5ABB23818BA60051EE92 /* CCExtension_Array.swift */,
+				00FC56F62390EB7900E51935 /* CCExtension_URL.swift */,
+				00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */,
 				562C5ABC23818BA60051EE92 /* CCExtension_UIView.swift */,
 				562C5ABD23818BA60051EE92 /* CCExtension_UICollectionViewLayout.swift */,
 				562C5ABE23818BA60051EE92 /* CCExtension_UIScrollView.swift */,
@@ -169,6 +178,7 @@
 				TargetAttributes = {
 					562C5AAC23818B750051EE92 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -212,12 +222,15 @@
 				562C5AD123818BA60051EE92 /* CCExtension_UIScrollView.swift in Sources */,
 				562C5ACD23818BA60051EE92 /* CCExtension_UIImage.swift in Sources */,
 				562C5AD823818BA60051EE92 /* CCExtension_NSValue.swift in Sources */,
+				00FC56F52390C31000E51935 /* CCExtension_UITextView.swift in Sources */,
 				568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */,
 				562C5AD223818BA60051EE92 /* CCExtension_NSNumber.swift in Sources */,
 				562C5ACF23818BA60051EE92 /* CCExtension_UIView.swift in Sources */,
 				0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */,
+				00FC56F32390B37C00E51935 /* CCExtension_Dictionary.swift in Sources */,
 				00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */,
 				562C5ACE23818BA60051EE92 /* CCExtension_Array.swift in Sources */,
+				00FC56F72390EB7900E51935 /* CCExtension_URL.swift in Sources */,
 				562C5ADA23818BA60051EE92 /* CCExtension_CALayer.swift in Sources */,
 				562C5AD423818BA60051EE92 /* CCExtension_Wrappable.swift in Sources */,
 				562C5AD023818BA60051EE92 /* CCExtension_UICollectionViewLayout.swift in Sources */,
@@ -356,6 +369,7 @@
 		562C5AB623818B750051EE92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9WF2Q7D4RJ;
@@ -374,6 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = YiS.CCBaseKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +397,7 @@
 		562C5AB723818B750051EE92 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9WF2Q7D4RJ;
