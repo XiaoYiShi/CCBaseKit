@@ -11,7 +11,12 @@ import UIKit
 public extension UIViewController
 {
     func cc_addBackBarButton() {
-        let back = UIBarButtonItem.init(image: #imageLiteral(resourceName: "cartoon_navigation_back_black"), style: .plain, target: self, action: #selector(cc_backBarButtonClick))
+        let back = UIBarButtonItem.init(
+            image: UIImage.init(named: "cartoon_navigation_back_black"),
+            style: .plain,
+            target: self,
+            action: #selector(cc_backBarButtonClick)
+        )
         back.tintColor = UIColor.init(rgb: 0x333333)
         self.navigationItem.leftBarButtonItem = back
     }
