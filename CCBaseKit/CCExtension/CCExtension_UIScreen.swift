@@ -8,10 +8,10 @@
 
 import UIKit
 
-//public extension UIScreen {
-//    //判断当前设备是否为高清屏
-//    static var isRetina : Bool {
-//        return UIScreen.main.scale > 1.0
-//    }
-//}
+public extension UIScreen {
+    //判断当前设备是否为高清屏
+    static var isRetina : Bool {
+        return UIScreen.main.scale > 1.0
+    }
+}
 

@@ -39,4 +39,49 @@ public extension UIViewController
 }
 
 
+public extension UIViewController {
+    
+    
+    var cc_navC : UINavigationController? {
+        return self.navigationController
+    }
+    
+    
+}
+
+public extension NSObject {
+
+    /// 获取顶层的viewControler
+    ///
+    /// - Returns: 顶层vc
+    func getTopVC() -> UIViewController {
+        let rootVC = UIApplication.shared.keyWindow?.rootViewController
+        let currentVC = self.getCurrentViewConroller(from: rootVC!)
+        return currentVC
+    }
+
+    /// 循环找到最顶部的viewController
+    ///
+    /// - Parameter from: 需要寻找这个vc是否是最上层的
+    /// - Returns: 返回最顶层的vc
+    fileprivate func getCurrentViewConroller(from:UIViewController) -> UIViewController {
+
+        var currentVC = from
+
+        if (from.presentedViewController != nil) {
+            currentVC = from.presentedViewController!
+        }
+
+        if let tab = currentVC as? UITabBarController {
+            currentVC = self.getCurrentViewConroller(from:tab.selectedViewController!)
+        }
+        if let nav = currentVC as? UINavigationController {
+            currentVC = self.getCurrentViewConroller(from: nav.visibleViewController!)
+        }
+
+        return currentVC
+
+    }
+}
+
 

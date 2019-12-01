@@ -33,6 +33,7 @@
 		562C5ADD23818BA60051EE92 /* CCExtension_Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5ACA23818BA60051EE92 /* CCExtension_Float.swift */; };
 		562C5ADE23818BA60051EE92 /* CCExtension_NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562C5ACB23818BA60051EE92 /* CCExtension_NSNotification.swift */; };
 		568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568B8AD12381940200DE05AE /* CCBaseKit.swift */; };
+		56C9790523941A09004ECE40 /* CCExtension_UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9790423941A09004ECE40 /* CCExtension_UIDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		562C5ACA23818BA60051EE92 /* CCExtension_Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCExtension_Float.swift; sourceTree = "<group>"; };
 		562C5ACB23818BA60051EE92 /* CCExtension_NSNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCExtension_NSNotification.swift; sourceTree = "<group>"; };
 		568B8AD12381940200DE05AE /* CCBaseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCBaseKit.swift; sourceTree = "<group>"; };
+		56C9790423941A09004ECE40 /* CCExtension_UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UIDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				562C5AB923818BA60051EE92 /* CCExtension_UITextField.swift */,
 				00FC56F42390C31000E51935 /* CCExtension_UITextView.swift */,
 				562C5ABA23818BA60051EE92 /* CCExtension_UIImage.swift */,
+				56C9790423941A09004ECE40 /* CCExtension_UIDevice.swift */,
 				562C5ABB23818BA60051EE92 /* CCExtension_Array.swift */,
 				00FC56F62390EB7900E51935 /* CCExtension_URL.swift */,
 				00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */,
@@ -218,6 +221,7 @@
 				562C5AD923818BA60051EE92 /* CCExtension_String.swift in Sources */,
 				562C5AD623818BA60051EE92 /* CCExtension_UIColor.swift in Sources */,
 				562C5AD723818BA60051EE92 /* CCExtension_Data.swift in Sources */,
+				56C9790523941A09004ECE40 /* CCExtension_UIDevice.swift in Sources */,
 				562C5ACC23818BA60051EE92 /* CCExtension_UITextField.swift in Sources */,
 				562C5AD123818BA60051EE92 /* CCExtension_UIScrollView.swift in Sources */,
 				562C5ACD23818BA60051EE92 /* CCExtension_UIImage.swift in Sources */,

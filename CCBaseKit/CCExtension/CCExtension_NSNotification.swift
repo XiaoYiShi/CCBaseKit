@@ -74,30 +74,30 @@ public extension NSNotification.Name { struct CC {} }
 //        static let Socket   = Notification.Name(rawValue: "Noti.CC.Push.Socket")//长链接消息
 //    }
 //}
-//
-//
-//
-//
-///**
-// - CCNOTIFY的设计目的在于缩减代码，增强可读性
-// 如：NotificationCenter.default.addObserver... 缩短为 CCNOTIFY.add...
-// */
-///// NotificationCenter.default便捷注册通知的类
-//class CCNOTIFY
-//{
-//    // 注册通知
-//    static func add(observer: Any, selector: Selector, name: NSNotification.Name)
-//    {
-//        return NotificationCenter.default.addObserver(observer, selector: selector, name: name, object: nil)
-//    }
-//    // 发送通知
-//    static func post(name: NSNotification.Name, object: Any?)
-//    {
-//        return NotificationCenter.default.post(name: name, object: object)
-//    }
-//    // 移除通知
-//    static func remove(observer: Any, name: NSNotification.Name)
-//    {
-//        return NotificationCenter.default.removeObserver(observer, name: name, object: nil)
-//    }
-//}
+
+
+
+
+/**
+ - CCNOTIFY的设计目的在于缩减代码，增强可读性
+ 如：NotificationCenter.default.addObserver... 缩短为 CCNOTIFY.add...
+ */
+/// NotificationCenter.default便捷注册通知的类
+public class CCNOTIFY
+{
+    // 注册通知
+    static func add(observer: Any, selector: Selector, name: NSNotification.Name)
+    {
+        return NotificationCenter.default.addObserver(observer, selector: selector, name: name, object: nil)
+    }
+    // 发送通知
+    static func post(name: NSNotification.Name, object: Any?)
+    {
+        return NotificationCenter.default.post(name: name, object: object)
+    }
+    // 移除通知
+    static func remove(observer: Any, name: NSNotification.Name)
+    {
+        return NotificationCenter.default.removeObserver(observer, name: name, object: nil)
+    }
+}

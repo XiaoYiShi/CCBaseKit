@@ -58,4 +58,3 @@ public func CC_Log<T>(_ message: T,
     print("\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
     #endif
 }
-
