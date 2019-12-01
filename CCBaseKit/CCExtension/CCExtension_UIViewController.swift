@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension UIViewController
+public extension UIViewController
 {
     func cc_addBackBarButton() {
         let back = UIBarButtonItem.init(image: #imageLiteral(resourceName: "cartoon_navigation_back_black"), style: .plain, target: self, action: #selector(cc_backBarButtonClick))
-        back.tintColor = UIColor.hex(rgb: 0x333333)
+        back.tintColor = UIColor.init(rgb: 0x333333)
         self.navigationItem.leftBarButtonItem = back
     }
     @objc func cc_backBarButtonClick() {
@@ -39,21 +39,4 @@ extension UIViewController
 }
 
 
-extension UIColor
-{
-    /// rgb颜色转换（16进制->10进制）
-    ///
-    /// - Parameter rgb: 16进制rgb
-    /// - Returns: 颜色
-    class func hex(rgb:UInt) -> UIColor {
-        return UIColor.hex(rgb: rgb, a: 1)
-    }
-    class func hex(rgb:UInt,a:CGFloat) -> UIColor {
-        return UIColor(
-            red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(rgb & 0x0000FF) / 255.0,
-            alpha: a
-        )
-    }
-}
+

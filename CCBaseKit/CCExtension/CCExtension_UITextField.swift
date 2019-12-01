@@ -16,6 +16,8 @@ public extension UITextField
 public extension UITextField
 {
     
+    /// 添加左侧间距
+    /// - Parameter width: 间距宽度
     func cc_addLeftSpace(_ width :CGFloat) -> Void {
         self.leftViewMode = .always
         let view = UIView.init()
@@ -23,7 +25,8 @@ public extension UITextField
         view.backgroundColor = .clear
         self.leftView = view
     }
-    
+    /// 添加t右侧间距
+    /// - Parameter width: 间距宽度
     func cc_addRightSpace(_ width :CGFloat) -> Void {
         self.rightViewMode = .always
         let view = UIView.init()

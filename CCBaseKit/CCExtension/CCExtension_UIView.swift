@@ -107,3 +107,35 @@ public extension UIView
 //
 //
 //}
+//MARK: - 形状
+extension UIView
+{
+    /// 快速设置view常用layer参数
+    /// - Parameters:
+    ///   - radius: 圆角
+    ///   - wdith: 边框    不设置边框就传0
+    ///   - color: 边框颜色 可不传
+    func layerWith(radius:CGFloat ,wdith:CGFloat ,color:UIColor ) -> Void
+    {
+        self.layer.masksToBounds    = true
+        self.layer.cornerRadius     = radius
+        self.layer.borderWidth      = wdith
+        self.layer.borderColor      = color.cgColor
+    }
+}
+
+//MARK: - 动画
+extension UIView
+{
+    /// 旋转动画
+    func addAnimation_rotation()
+    {
+        let rotationAnimation = CABasicAnimation.init(keyPath: "transform.rotation.z")
+        rotationAnimation.toValue = NSNumber.init(value: Float.pi * 2)
+        rotationAnimation.duration = 1
+        rotationAnimation.isCumulative = true
+        rotationAnimation.repeatCount = 3
+        self.layer.add(rotationAnimation, forKey: "rotationAnimation")
+    }
+}
+
