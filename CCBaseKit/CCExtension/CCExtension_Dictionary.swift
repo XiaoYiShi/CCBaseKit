@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// 键值管理
 extension Dictionary where Key == String, Value : Any {
     mutating func set(_ object:Value?, for key:String) {
         self["key"] = object
@@ -39,6 +40,47 @@ extension Dictionary where Key == String, Value : Any {
             return nil
         }
     }
+    func number(for key:String) -> NSNumber? {
+        if let value = self[key]
+        {
+            return value as? NSNumber
+        } else {
+            return nil
+        }
+    }
+    func bool(for key:String) -> Bool? {
+        if let value = self[key]
+        {
+            return value as? Bool
+        } else {
+            return nil
+        }
+    }
+    func int(for key:String) -> Int? {
+        if let value = self[key]
+        {
+            return value as? Int
+        } else {
+            return nil
+        }
+    }
+    func float(for key:String) -> Float? {
+        if let value = self[key]
+        {
+            return value as? Float
+        } else {
+            return nil
+        }
+    }
+    func double(for key:String) -> Double? {
+        if let value = self[key]
+        {
+            return value as? Double
+        } else {
+            return nil
+        }
+    }
+    
 }
 
 //public extension Dictionary<Key, Value> where Key : String
