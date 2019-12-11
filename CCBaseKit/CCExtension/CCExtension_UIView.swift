@@ -8,7 +8,13 @@
 
 import UIKit
 
-
+public extension UIView
+{
+    convenience init(bgColor : UIColor) {
+        self.init()
+        backgroundColor = bgColor
+    }
+}
 
 //MARK: - frame扩展
 public extension UIView
