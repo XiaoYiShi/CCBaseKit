@@ -153,3 +153,12 @@ public typealias Long       = Int
 public func Alert(msg: String) {
     UIAlertController.show(title: nil, msg: msg, actionTitle: "确定", handler: nil)
 }
+//兼容JAVA习惯的类型名
+struct System
+{
+    struct out {
+        static func println(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+            debugPrint(items)
+        }
+    }
+}

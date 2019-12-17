@@ -46,4 +46,15 @@ public extension Float
     var cc_number: NSNumber {
         return NSNumber.init(value: self)
     }
+    
+//    var max : Float {
+//        return self.max
+//        set {
+//
+//        }
+//        get {
+//            return self.max
+//        }
+//    }
+    
 }
