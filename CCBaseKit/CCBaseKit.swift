@@ -148,6 +148,7 @@ public typealias BigDecimal = Decimal
 public typealias List       = Array
 public typealias Integer    = Int
 public typealias Long       = Int
+public typealias Map        = Dictionary
 //兼容JS习惯的方法名
 /// 便捷方法弹出一个带"确认"按钮的alert
 public func Alert(msg: String) {
@@ -162,3 +163,8 @@ struct System
         }
     }
 }
+//兼容PHP习惯的输出
+func echo(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+    debugPrint(items)
+}
+
