@@ -1,6 +1,6 @@
 
 //
-//  XLTC.swift
+//  CCExtension_Wrappable.swift
 //  XcodeTest
 //
 //  Created by 史晓义 on 2019/9/5.
@@ -74,70 +74,6 @@ import UIKit
 //extension String    : CCKit_Wrappable {}
 
 //extension Data      : CCKit_Wrappable {}
-
-
-
-
-extension UILabel {
-    
-    /// 便利构造方法, 快速的创建一个label并设置一些属性
-    ///
-    /// - Parameters:
-    ///   - font: label上的字体
-    ///   - textColor: 字体颜色
-    ///   - alignment: 字体对齐方式
-    public convenience init(font: UIFont, textColor: UIColor, alignment: NSTextAlignment? = nil) {
-        self.init(frame: CGRect.zero)
-        set(font: font, textColor: textColor, alignment: alignment)
-    }
-    
-    /// 提供方法便捷的设置label的属性
-    ///
-    /// - Parameters:
-    ///   - font: 设置字体
-    ///   - textColor: 设置文字颜色
-    ///   - alignment: 设置文字对其方式
-    public func set(font: UIFont, textColor: UIColor, alignment: NSTextAlignment? = nil) {
-        self.font = font
-        self.textColor = textColor
-        //当对齐方式不为空时候,重置对齐方式
-        if let alignment = alignment {
-            self.textAlignment = alignment
-        }
-    }
-}
-
-
-extension UIButton {
-    
-    /// 提供遍历构造器 设置UIButton的属性
-    ///
-    /// - Parameters:
-    ///   - font: 设置标题字体
-    ///   - titleColor: 设置标题颜色
-    ///   - title: 设置标题
-    public convenience init(font: UIFont, titleColor: UIColor?) {
-        self.init(type: .custom)
-        set(font: font, titleColor: titleColor)
-    }
-
-    /// 提供便捷方法设置UIButton的属性
-    ///
-    /// - Parameters:
-    ///   - font: 设置标题字体
-    ///   - titleColor: 设置标题颜色
-    ///   - title: 设置标题
-    public func set(font: UIFont, titleColor: UIColor?) {
-        titleLabel?.font = font
-        if let titleColor = titleColor { setTitleColor(titleColor, for: .normal) }
-    }
-    
-    /// 设置文字,图像
-    public func set(title: String?, image: UIImage?, state: UIControl.State = .normal) {
-        if let title = title { setTitle(title, for: state) }
-        if let image = image { setImage(image, for: state) }
-    }
-}
 
 
 //extension UIBarButtonItem {

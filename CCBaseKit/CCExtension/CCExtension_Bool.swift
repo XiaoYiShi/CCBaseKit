@@ -10,17 +10,17 @@ import UIKit
 
 
 //MARK: - 常用参数
-//public extension Bool
-//{
-//    public static let cc_iPad     = (UIDevice.current.userInterfaceIdiom == .pad)
-//    public static let cc_iPhone   = (UIDevice.current.userInterfaceIdiom == .phone)
-//    public static let cc_iOS8     = (UIDevice.current.systemVersion as NSString).doubleValue >= 8.0
-//    public static let cc_iOS9     = (UIDevice.current.systemVersion as NSString).doubleValue >= 9.0
-//    public static let cc_iOS10    = (UIDevice.current.systemVersion as NSString).doubleValue >= 10.0
-//    public static let cc_iOS11    = (UIDevice.current.systemVersion as NSString).doubleValue >= 11.0
-//    public static let cc_iOS12    = (UIDevice.current.systemVersion as NSString).doubleValue >= 12.0
-//    public static let cc_iOS13    = (UIDevice.current.systemVersion as NSString).doubleValue >= 13.0
-//}
+public extension Bool
+{
+    static let cc_iPad     = (UIDevice.current.userInterfaceIdiom == .pad)
+    static let cc_iPhone   = (UIDevice.current.userInterfaceIdiom == .phone)
+    static let cc_iOS8     = (UIDevice.current.systemVersion as NSString).doubleValue >= 8.0
+    static let cc_iOS9     = (UIDevice.current.systemVersion as NSString).doubleValue >= 9.0
+    static let cc_iOS10    = (UIDevice.current.systemVersion as NSString).doubleValue >= 10.0
+    static let cc_iOS11    = (UIDevice.current.systemVersion as NSString).doubleValue >= 11.0
+    static let cc_iOS12    = (UIDevice.current.systemVersion as NSString).doubleValue >= 12.0
+    static let cc_iOS13    = (UIDevice.current.systemVersion as NSString).doubleValue >= 13.0
+}
 
 //MARK: - 简单数据类型扩展
 public extension Bool
