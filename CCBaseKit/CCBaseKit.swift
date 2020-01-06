@@ -43,11 +43,7 @@ public struct CCKit
 
 
 
-public class CC_Screen : NSObject
-{
-    public static let width  : CGFloat = UIScreen.main.bounds.size.width
-    public static let height : CGFloat = UIScreen.main.bounds.size.height
-}
+
 //MARK: - func
 public func CC_Log<T>(_ message: T,
                file: String = #file,
@@ -143,12 +139,7 @@ fileprivate func topController() -> UIViewController? {
     return aboveController
 }
 
-//兼容JAVA习惯的类型名
-public typealias BigDecimal = Decimal
-public typealias List       = Array
-public typealias Integer    = Int
-public typealias Long       = Int
-public typealias Map        = Dictionary
+
 //兼容JS习惯的方法名
 /// 便捷方法弹出一个带"确认"按钮的alert
 public func Alert(msg: String) {

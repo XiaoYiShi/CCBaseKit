@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0028582123C32F430074A922 /* CC_Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582023C32F430074A922 /* CC_Typealias.swift */; };
+		0028582323C331230074A922 /* CC_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582223C331230074A922 /* CC_Screen.swift */; };
+		0028582523C3322E0074A922 /* CC_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582423C3322E0074A922 /* CC_TableViewCell.swift */; };
+		0028582723C333940074A922 /* CC_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582623C333940074A922 /* CC_CollectionViewCell.swift */; };
+		0028582923C333DF0074A922 /* CC_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582823C333DF0074A922 /* CC_View.swift */; };
+		0028582B23C334950074A922 /* CC_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582A23C334950074A922 /* CC_ViewController.swift */; };
+		0028582D23C334BB0074A922 /* CC_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582C23C334BB0074A922 /* CC_Protocol.swift */; };
 		0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */; };
 		00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */; };
 		00FC56F32390B37C00E51935 /* CCExtension_Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */; };
@@ -37,6 +44,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0028582023C32F430074A922 /* CC_Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_Typealias.swift; sourceTree = "<group>"; };
+		0028582223C331230074A922 /* CC_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_Screen.swift; sourceTree = "<group>"; };
+		0028582423C3322E0074A922 /* CC_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_TableViewCell.swift; sourceTree = "<group>"; };
+		0028582623C333940074A922 /* CC_CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_CollectionViewCell.swift; sourceTree = "<group>"; };
+		0028582823C333DF0074A922 /* CC_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_View.swift; sourceTree = "<group>"; };
+		0028582A23C334950074A922 /* CC_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_ViewController.swift; sourceTree = "<group>"; };
+		0028582C23C334BB0074A922 /* CC_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_Protocol.swift; sourceTree = "<group>"; };
 		0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UIViewController.swift; sourceTree = "<group>"; };
 		00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UserDefaults.swift; sourceTree = "<group>"; };
 		00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_Dictionary.swift; sourceTree = "<group>"; };
@@ -79,6 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0028581F23C32F000074A922 /* CCBase */ = {
+			isa = PBXGroup;
+			children = (
+				0028582023C32F430074A922 /* CC_Typealias.swift */,
+				0028582223C331230074A922 /* CC_Screen.swift */,
+				0028582423C3322E0074A922 /* CC_TableViewCell.swift */,
+				0028582623C333940074A922 /* CC_CollectionViewCell.swift */,
+				0028582823C333DF0074A922 /* CC_View.swift */,
+				0028582A23C334950074A922 /* CC_ViewController.swift */,
+				0028582C23C334BB0074A922 /* CC_Protocol.swift */,
+			);
+			path = CCBase;
+			sourceTree = "<group>";
+		};
 		562C5AA323818B750051EE92 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +128,7 @@
 			children = (
 				562C5AB023818B750051EE92 /* CCBaseKit.h */,
 				568B8AD12381940200DE05AE /* CCBaseKit.swift */,
+				0028581F23C32F000074A922 /* CCBase */,
 				562C5AB123818B750051EE92 /* Info.plist */,
 				562C5AB823818BA60051EE92 /* CCExtension */,
 			);
@@ -220,11 +249,14 @@
 			files = (
 				562C5AD923818BA60051EE92 /* CCExtension_String.swift in Sources */,
 				562C5AD623818BA60051EE92 /* CCExtension_UIColor.swift in Sources */,
+				0028582323C331230074A922 /* CC_Screen.swift in Sources */,
 				562C5AD723818BA60051EE92 /* CCExtension_Data.swift in Sources */,
 				56C9790523941A09004ECE40 /* CCExtension_UIDevice.swift in Sources */,
 				562C5ACC23818BA60051EE92 /* CCExtension_UITextField.swift in Sources */,
 				562C5AD123818BA60051EE92 /* CCExtension_UIScrollView.swift in Sources */,
+				0028582B23C334950074A922 /* CC_ViewController.swift in Sources */,
 				562C5ACD23818BA60051EE92 /* CCExtension_UIImage.swift in Sources */,
+				0028582923C333DF0074A922 /* CC_View.swift in Sources */,
 				562C5AD823818BA60051EE92 /* CCExtension_NSValue.swift in Sources */,
 				00FC56F52390C31000E51935 /* CCExtension_UITextView.swift in Sources */,
 				568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */,
@@ -236,9 +268,13 @@
 				562C5ACE23818BA60051EE92 /* CCExtension_Array.swift in Sources */,
 				00FC56F72390EB7900E51935 /* CCExtension_URL.swift in Sources */,
 				562C5ADA23818BA60051EE92 /* CCExtension_CALayer.swift in Sources */,
+				0028582D23C334BB0074A922 /* CC_Protocol.swift in Sources */,
 				562C5AD423818BA60051EE92 /* CCExtension_Wrappable.swift in Sources */,
 				562C5AD023818BA60051EE92 /* CCExtension_UICollectionViewLayout.swift in Sources */,
+				0028582723C333940074A922 /* CC_CollectionViewCell.swift in Sources */,
 				562C5ADB23818BA60051EE92 /* CCExtension_Int.swift in Sources */,
+				0028582523C3322E0074A922 /* CC_TableViewCell.swift in Sources */,
+				0028582123C32F430074A922 /* CC_Typealias.swift in Sources */,
 				562C5ADE23818BA60051EE92 /* CCExtension_NSNotification.swift in Sources */,
 				562C5ADC23818BA60051EE92 /* CCExtension_Double.swift in Sources */,
 				562C5AD323818BA60051EE92 /* CCExtension_Bool.swift in Sources */,

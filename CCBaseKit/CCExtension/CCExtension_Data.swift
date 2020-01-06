@@ -31,7 +31,7 @@ public extension Data
 public extension Data
 {
     /// utf8String
-    public var cc_utf8String: String {
+    var cc_utf8String: String {
         if self.count > 0 {
             return String.init(data: self, encoding: String.Encoding.utf8) ?? ""
         }
