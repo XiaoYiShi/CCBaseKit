@@ -11,14 +11,14 @@ import UIKit
 //MARK: - 处理MVVM结构的控制器
 open class CC_ViewController: UIViewController
 {
-    override public func loadView() {
+    override open func loadView() {
         super.loadView()
         view.backgroundColor = UIColor.white
         automaticallyAdjustsScrollViewInsets = false
         cc_setUI()
         cc_setViewModel()
     }
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
     }
 }
