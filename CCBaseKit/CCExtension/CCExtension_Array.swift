@@ -163,6 +163,33 @@ public extension Array where Element == String
     }
 }
 
+/// 增删改查
+public extension Array where Element : NSObject
+{
+    mutating func remove(object: Element) {
+        //确认包含对象再去重
+        if contains(object) {
+            //第一次去重
+            for (index,object1) in self.enumerated() {
+                if object == object1 {
+                    self.remove(at: index)
+                    break
+                }
+            }
+            //如果还包含有，再递归一次去重
+            if contains(object) {
+                remove(object: object)
+            }
+        }
+    }
+    mutating func removeObjects(in array:[Element]) {
+        for object in array {
+            self.remove(object: object)
+        }
+    }
+}
+
+
 //
 //public extension Array
 //{
