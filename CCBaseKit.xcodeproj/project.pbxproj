@@ -14,6 +14,7 @@
 		0028582923C333DF0074A922 /* CC_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582823C333DF0074A922 /* CC_View.swift */; };
 		0028582B23C334950074A922 /* CC_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582A23C334950074A922 /* CC_ViewController.swift */; };
 		0028582D23C334BB0074A922 /* CC_Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028582C23C334BB0074A922 /* CC_Protocol.swift */; };
+		0028583C23C8563A0074A922 /* CCExtension_UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028583B23C8563A0074A922 /* CCExtension_UIControl.swift */; };
 		0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */; };
 		00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */; };
 		00FC56F32390B37C00E51935 /* CCExtension_Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */; };
@@ -51,6 +52,7 @@
 		0028582823C333DF0074A922 /* CC_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_View.swift; sourceTree = "<group>"; };
 		0028582A23C334950074A922 /* CC_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_ViewController.swift; sourceTree = "<group>"; };
 		0028582C23C334BB0074A922 /* CC_Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CC_Protocol.swift; sourceTree = "<group>"; };
+		0028583B23C8563A0074A922 /* CCExtension_UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UIControl.swift; sourceTree = "<group>"; };
 		0065AB2C238B6AF9008953A8 /* CCExtension_UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UIViewController.swift; sourceTree = "<group>"; };
 		00B0EA95238270D900442274 /* CCExtension_UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_UserDefaults.swift; sourceTree = "<group>"; };
 		00FC56F22390B37C00E51935 /* CCExtension_Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCExtension_Dictionary.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				562C5ABF23818BA60051EE92 /* CCExtension_NSNumber.swift */,
 				562C5AC023818BA60051EE92 /* CCExtension_Bool.swift */,
 				562C5AC123818BA60051EE92 /* CCExtension_Wrappable.swift */,
+				0028583B23C8563A0074A922 /* CCExtension_UIControl.swift */,
 				562C5AC223818BA60051EE92 /* CCExtension_UIScreen.swift */,
 				562C5AC323818BA60051EE92 /* CCExtension_UIColor.swift */,
 				562C5AC423818BA60051EE92 /* CCExtension_Data.swift */,
@@ -262,6 +265,7 @@
 				568B8AD22381940200DE05AE /* CCBaseKit.swift in Sources */,
 				562C5AD223818BA60051EE92 /* CCExtension_NSNumber.swift in Sources */,
 				562C5ACF23818BA60051EE92 /* CCExtension_UIView.swift in Sources */,
+				0028583C23C8563A0074A922 /* CCExtension_UIControl.swift in Sources */,
 				0065AB2D238B6AF9008953A8 /* CCExtension_UIViewController.swift in Sources */,
 				00FC56F32390B37C00E51935 /* CCExtension_Dictionary.swift in Sources */,
 				00B0EA96238270D900442274 /* CCExtension_UserDefaults.swift in Sources */,
