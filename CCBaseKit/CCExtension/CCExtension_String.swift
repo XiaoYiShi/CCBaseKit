@@ -16,6 +16,7 @@ public extension String
         return self.bool ?? false
     }
     var bool: Bool? {
+        
         switch self {
         case "true","TRUE","True","yes","YES","Yes":
             return true
@@ -28,9 +29,33 @@ public extension String
 
     //Int
     var intValue : Int {
-        return Int(self) ?? 0
+        return int ?? 0
     }
     var int : Int? {
+        // hex number
+        var sign = 0
+        if self.hasPrefix("0x")
+        { sign = 1 }
+        else if self.hasPrefix("-0x")
+        {
+            sign = -1
+        }
+        
+        if sign != 0 {
+            var str = self
+            if sign == -1 {
+                str.removeFirst()
+            }
+            let scan = Scanner.init(string: str)
+            var num:UInt64 = 0
+            let suc = scan.scanHexInt64(&num)
+            if suc {
+                return Int(num) * sign
+            } else {
+                return nil
+            }
+        }
+        
         return Int(self)
     }
 
@@ -79,15 +104,50 @@ public extension String
         return self.number ?? NSNumber(0)
     }
     var number: NSNumber? {
-        let formatter = NumberFormatter.init()
-        if self.contains(".") {
-            //小数形式（以国际化格式输出 保留三位小数,第四位小数四舍五入）
-            formatter.numberStyle = .decimal
-        } else {
-            //四舍五入的整数
-            formatter.numberStyle = .none
+        let str = self.trim.lowercased()
+        if str.count == 0 {
+            return nil
         }
-        return formatter.number(from: self)
+        
+        // bool
+        switch str {
+        case "true","yes":
+            return NSNumber.init(value: true)
+        case "false","no":
+            return NSNumber.init(value: false)
+        case "nil","null","<null>":
+            return nil
+        default:
+            break
+        }
+        
+        
+        // hex number
+        var sign = 0
+        if str.hasPrefix("0x")
+        { sign = 1 }
+        else if str.hasPrefix("-0x")
+        { sign = -1 }
+        
+        if sign != 0 {
+            var str = self
+            if sign == -1 {
+                str.removeFirst()
+            }
+            let scan = Scanner.init(string: str)
+            var num:UInt64 = 0
+            let suc = scan.scanHexInt64(&num)
+            if suc {
+                return NSNumber.init(value: Int(num) * sign)
+            } else {
+                return nil
+            }
+        }
+        
+        // normal number
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter.number(from: str)
     }
 }
 
@@ -160,7 +220,14 @@ extension String{
     //过滤emoji
     //过滤数字
     
+    //清除符号
     
+    /// Trim blank characters (space and newline) in head and tail. @return the trimmed string.
+    var trim : String
+    {
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+     
 }
 // MARK: - 编解码
 extension String {
@@ -276,66 +343,6 @@ extension String
 //    //将编码后的url转换回原始的url
 //    func urlDecoded() -> String {
 //        return self.removingPercentEncoding ?? ""
-//    }
-//
-//    //MARK: - 字符串处理
-//    static func selectIndex(str : String) -> String {
-//        switch str {
-//        case "a","A":
-//            return "A"
-//        case "b","B":
-//            return "B"
-//        case "c","C":
-//            return "C"
-//        case "d","D":
-//            return "D"
-//        case "e","E":
-//            return "E"
-//        case "f","F":
-//            return "F"
-//        case "g","G":
-//            return "G"
-//        case "h","H":
-//            return "H"
-//        case "i","I":
-//            return "I"
-//        case "j","J":
-//            return "J"
-//        case "k","K":
-//            return "K"
-//        case "l","L":
-//            return "L"
-//        case "m","M":
-//            return "M"
-//        case "n","N":
-//            return "N"
-//        case "o","O":
-//            return "O"
-//        case "p","P":
-//            return "P"
-//        case "q","Q":
-//            return "Q"
-//        case "r","R":
-//            return "R"
-//        case "s","S":
-//            return "S"
-//        case "t","T":
-//            return "T"
-//        case "u","U":
-//            return "U"
-//        case "v","V":
-//            return "V"
-//        case "w","W":
-//            return "W"
-//        case "x","X":
-//            return "X"
-//        case "y","Y":
-//            return "Y"
-//        case "z","Z":
-//            return "Z"
-//        default:
-//            return "*"
-//        }
 //    }
 //}
 //
